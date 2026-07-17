@@ -3,30 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Taschenrechner</title>
+  <title>quiz-spiel</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <h1>🧮 Taschenrechner</h1>
-  <h2 id="display">0</h2>
-  <div>
-    <button onclick="tippe('1')">1</button>
-    <button onclick="tippe('2')">2</button>
-    <button onclick="tippe('3')">3</button>
-    <button onclick="tippe('4')">4</button>
-    <button onclick="tippe('5')">5</button>
-    <button onclick="tippe('6')">6</button>
-    <button onclick="tippe('7')">7</button>
-    <button onclick="tippe('8')">8</button>
-    <button onclick="tippe('9')">9</button>
-    <button onclick="tippe('0')">0</button>
-  </div>
-  <div>
-    <button onclick="loesche()">C</button>
-    <button onclick="waehle('+')">+</button>
-    <button onclick="waehle('-')">-</button>
-    <button onclick="rechne()">=</button>
-  </div>
+  <h1>❓ Quiz-Spiel</h1>
+  <button onclick="starte()">Quiz starten</button>
+  <h2 id="ergebnis"></h2>
   <script src="script.js"></script>
   <hr style="max-width:640px;margin:2.5rem auto 1rem;border:none;border-top:2px solid #e0e7ff;">
   <details style="max-width:640px;margin:0 auto 1rem;text-align:left;">

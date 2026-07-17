@@ -1,6 +1,6 @@
 function spielen() {
-  const zahl = Math.floor(Math.random() * 100) + 1
-  let tipp = Number(prompt("Rate eine Zahl von 1 bis 100:"))
+  const zahl = Math.floor(Math.random() * 30) + 1
+  let tipp = Number(prompt("Rate eine Zahl von 1 bis 30:"))
 
   while (tipp !== zahl) {
     if (tipp < zahl) {

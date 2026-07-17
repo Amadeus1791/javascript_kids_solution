@@ -4,4 +4,4 @@ h1 { color: #4f46e5; }
 button { font-size: 1.1rem; padding: 0.6rem 1.2rem; margin: 0.3rem; border: none;
          border-radius: 10px; background: #4f46e5; color: white; cursor: pointer; }
 button:hover { background: #4338ca; }
-#ergebnis { line-height: 1.7; margin: 1.4rem 0; }
+.muster { font-size: 2rem; word-break: break-all; line-height: 1.6; min-height: 3rem; max-width: 520px; margin: 1.5rem auto; }

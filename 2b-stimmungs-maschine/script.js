@@ -1,16 +1,16 @@
 const face = document.getElementById("face")
 
 function froh() {
-  face.innerHTML = ":)"
+  face.innerHTML = "😀"
   document.body.style.backgroundColor = "gold"
 }
 
 function cool() {
-  face.innerHTML = "8)"
+  face.innerHTML = "😎"
   document.body.style.backgroundColor = "skyblue"
 }
 
 function party() {
-  face.innerHTML = ":D"
+  face.innerHTML = "🥳"
   document.body.style.backgroundColor = "hotpink"
 }

@@ -22,4 +22,14 @@ function rechne() {
     ergebnis = ersteZahl - zweite
   }
   document.getElementById("display").innerHTML = ergebnis
+  anzeige = ""
+  ersteZahl = 0
+  rechenart = ""
+}
+
+function loesche() {
+  anzeige = ""
+  ersteZahl = 0
+  rechenart = ""
+  document.getElementById("display").innerHTML = "0"
 }

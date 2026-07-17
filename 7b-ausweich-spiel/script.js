@@ -2,6 +2,7 @@ let x = 200
 let hindernisX = 100
 let hindernisY = 0
 let punkte = 0
+let tempo = 6
 let timer
 
 document.addEventListener("keydown", bewege)
@@ -17,11 +18,12 @@ function start() {
 }
 
 function fallen() {
-  hindernisY = hindernisY + 5
+  hindernisY = hindernisY + tempo
   if (hindernisY > 340) {
     hindernisY = 0
     hindernisX = Math.floor(Math.random() * 400)
     punkte = punkte + 1
+    tempo = tempo + 1
     document.getElementById("punkte").innerHTML = "Punkte: " + punkte
   }
   document.getElementById("hindernis").style.top = hindernisY + "px"

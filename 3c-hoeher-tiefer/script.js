@@ -12,7 +12,8 @@ function raten(wahl) {
   if (richtig) {
     punkte = punkte + 1
   } else {
-    punkte = 0
+    punkte = punkte - 1
+    if (punkte < 0) punkte = 0
   }
 
   aktuelle = naechste

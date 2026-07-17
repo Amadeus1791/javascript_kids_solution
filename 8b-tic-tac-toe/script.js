@@ -1,21 +1,34 @@
 let feld = ["", "", "", "", "", "", "", "", ""]
-let spieler = "X"
 
 function setze(i) {
   if (feld[i] !== "") return
-
-  feld[i] = spieler
-  document.getElementById("z" + i).innerHTML = spieler
+  feld[i] = "X"
+  document.getElementById("z" + i).innerHTML = "X"
 
   if (gewonnen()) {
-    document.getElementById("text").innerHTML = spieler + " gewinnt!"
+    document.getElementById("text").innerHTML = "Du gewinnst!"
+    return
+  }
+  computerZug()
+}
+
+function computerZug() {
+  let frei = []
+  for (let i = 0; i < feld.length; i++) {
+    if (feld[i] === "") frei.push(i)
+  }
+  if (frei.length === 0) {
+    document.getElementById("text").innerHTML = "Unentschieden!"
+    return
+  }
+  const wahl = frei[Math.floor(Math.random() * frei.length)]
+  feld[wahl] = "O"
+  document.getElementById("z" + wahl).innerHTML = "O"
+
+  if (gewonnen()) {
+    document.getElementById("text").innerHTML = "Der Computer gewinnt!"
   } else {
-    if (spieler === "X") {
-      spieler = "O"
-    } else {
-      spieler = "X"
-    }
-    document.getElementById("text").innerHTML = spieler + " ist dran"
+    document.getElementById("text").innerHTML = "Du bist dran"
   }
 }
 

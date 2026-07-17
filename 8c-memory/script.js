@@ -4,6 +4,7 @@ symbole.sort(function() { return Math.random() - 0.5 })
 let erste = -1
 let zweite = -1
 let sperre = false
+let gefunden = 0
 
 function klick(i) {
   if (sperre) return
@@ -21,8 +22,12 @@ function klick(i) {
 function pruefe(i) {
   zweite = i
   if (symbole[erste] === symbole[zweite]) {
+    gefunden = gefunden + 1
     erste = -1
     zweite = -1
+    if (gefunden === symbole.length / 2) {
+      document.getElementById("text").innerHTML = "Geschafft! Alle Paare gefunden! 🎉"
+    }
   } else {
     sperre = true
     setTimeout(klappeZurueck, 800)
