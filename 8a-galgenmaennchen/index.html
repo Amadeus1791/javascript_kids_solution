@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galgenmännchen</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>🔤 Galgenmännchen</h1>
+  <h2 id="wort"></h2>
+  <p id="fehler">Fehler: 0 / 6</p>
+  <p id="text">Rate das Wort, Buchstabe für Buchstabe!</p>
+  <div id="tasten">
+    <button onclick="rate('A'); this.disabled=true">A</button>
+    <button onclick="rate('B'); this.disabled=true">B</button>
+    <button onclick="rate('C'); this.disabled=true">C</button>
+    <button onclick="rate('D'); this.disabled=true">D</button>
+    <button onclick="rate('E'); this.disabled=true">E</button>
+    <button onclick="rate('F'); this.disabled=true">F</button>
+    <button onclick="rate('G'); this.disabled=true">G</button>
+    <button onclick="rate('H'); this.disabled=true">H</button>
+    <button onclick="rate('I'); this.disabled=true">I</button>
+    <button onclick="rate('J'); this.disabled=true">J</button>
+    <button onclick="rate('K'); this.disabled=true">K</button>
+    <button onclick="rate('L'); this.disabled=true">L</button>
+    <button onclick="rate('M'); this.disabled=true">M</button>
+    <button onclick="rate('N'); this.disabled=true">N</button>
+    <button onclick="rate('O'); this.disabled=true">O</button>
+    <button onclick="rate('P'); this.disabled=true">P</button>
+    <button onclick="rate('Q'); this.disabled=true">Q</button>
+    <button onclick="rate('R'); this.disabled=true">R</button>
+    <button onclick="rate('S'); this.disabled=true">S</button>
+    <button onclick="rate('T'); this.disabled=true">T</button>
+    <button onclick="rate('U'); this.disabled=true">U</button>
+    <button onclick="rate('V'); this.disabled=true">V</button>
+    <button onclick="rate('W'); this.disabled=true">W</button>
+    <button onclick="rate('X'); this.disabled=true">X</button>
+    <button onclick="rate('Y'); this.disabled=true">Y</button>
+    <button onclick="rate('Z'); this.disabled=true">Z</button>
+  </div>
+  <script src="script.js"></script>
+  <hr style="max-width:640px;margin:2.5rem auto 1rem;border:none;border-top:2px solid #e0e7ff;">
+  <details style="max-width:640px;margin:0 auto 1rem;text-align:left;">
+    <summary style="cursor:pointer;font-weight:700;color:#4f46e5;font-size:1.1rem;">&#128203; Code anzeigen &amp; kopieren</summary>
+    <p style="color:#475569;">Kopiere das in deine <b>script.js</b> in VS Code. Die Luecken (<code>...</code>) fuellst du selbst:</p>
+    <button onclick="dcCopy()" style="background:#4f46e5;color:#fff;border:none;border-radius:8px;padding:.5rem 1rem;font-size:1rem;cursor:pointer;">script.js kopieren</button>
+    <pre id="dc-js" style="background:#1e293b;color:#e2e8f0;padding:1rem;border-radius:10px;overflow:auto;font-size:.9rem;text-align:left;">laedt ...</pre>
+    <p style="color:#475569;">Dateien herunterladen:
+      <a href="index.html" download>index.html</a> &nbsp;&middot;&nbsp;
+      <a href="styles.css" download>styles.css</a> &nbsp;&middot;&nbsp;
+      <a href="script.js" download>script.js</a></p>
+  </details>
+  <script>
+    fetch("script.js").then(function(r){return r.text();}).then(function(t){document.getElementById("dc-js").textContent=t;}).catch(function(){document.getElementById("dc-js").textContent="(oeffne script.js direkt)";});
+    function dcCopy(){navigator.clipboard.writeText(document.getElementById("dc-js").textContent);}
+  </script>
+</body>
+</html>

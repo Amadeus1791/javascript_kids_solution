@@ -1,0 +1,8 @@
+body { font-family: system-ui, -apple-system, sans-serif; text-align: center;
+       padding: 2rem; background: #f8fafc; color: #1e293b; }
+h1 { color: #4f46e5; }
+button { font-size: 1.1rem; padding: 0.6rem 1.2rem; margin: 0.3rem; border: none;
+         border-radius: 10px; background: #4f46e5; color: white; cursor: pointer; }
+button:hover { background: #4338ca; }
+#licht { width: 110px; height: 110px; border-radius: 50%; margin: 1rem auto;
+         background: #94a3b8; border: 4px solid #334155; }

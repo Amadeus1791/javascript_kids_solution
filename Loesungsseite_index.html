@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DigiCamp · Lösungen (Trainer)</title>
+  <style>
+    body { font-family: system-ui, -apple-system, sans-serif; margin: 0; padding: 0 1rem 3rem; background: #f8fafc; color: #1e293b; }
+    header { background: #4f46e5; color: white; text-align: center; padding: 2.4rem 1rem; margin: 0 -1rem 2rem; }
+    header h1 { margin: 0; font-size: 2.2rem; }
+    header p { margin: 0.4rem 0 0; opacity: 0.85; }
+    .wrap { max-width: 900px; margin: 0 auto; }
+    .startbox { background: #eef2ff; border-radius: 16px; padding: 1.4rem 1.6rem; margin: 0 0 2.2rem; }
+    .startbox h2 { margin: 0.1rem 0 0.9rem; border: none; color: #4338ca; }
+    .startbox h3 { margin: 1.1rem 0 0.6rem; color: #4338ca; font-size: 1rem; }
+    .res-grid { display: flex; flex-wrap: wrap; gap: 0.6rem; }
+    .res { background: #4f46e5; color: #fff; text-decoration: none; padding: 0.6rem 1rem; border-radius: 10px; font-weight: 600; }
+    .res:hover { background: #4338ca; }
+    .res.folie { background: #fff; color: #4f46e5; border: 2px solid #c7d2fe; padding: 0.45rem 0.85rem; font-weight: 700; }
+    .res.folie:hover { border-color: #4f46e5; }
+    .hint { color: #475569; font-size: 0.92rem; margin: 1rem 0 0; }
+    .hinweis { background: #fef3c7; border-left: 5px solid #d97706; border-radius: 10px;
+               padding: 1rem 1.2rem; margin: 0 0 2rem; color: #78350f; line-height: 1.5; }
+    h2 { color: #4338ca; margin-top: 2rem; border-bottom: 3px solid #e0e7ff; padding-bottom: 0.3rem; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 1rem; }
+    .card { display: block; background: white; border: 2px solid #e0e7ff; border-radius: 14px; padding: 1.1rem; text-decoration: none; color: inherit; transition: transform .1s, border-color .1s; }
+    .card:hover { transform: translateY(-3px); border-color: #4f46e5; }
+    .emoji { font-size: 2.4rem; }
+    .name { font-weight: 700; color: #4f46e5; margin-top: 0.3rem; }
+    .desc { font-size: 0.9rem; color: #64748b; margin-top: 0.2rem; }
+    footer { text-align: center; color: #94a3b8; margin-top: 3rem; font-size: 0.9rem; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>🔑 JavaScript für Kids — Lösungen</h1>
+    <p>DigiCamp · Die fertigen Spiele (Lösungen — nur für den Trainer)</p>
+  </header>
+  <div class="wrap">
+    <div class="startbox">
+      <h2>Material</h2>
+      <div class="res-grid">
+        <a class="res" href="https://code.visualstudio.com/download" target="_blank" rel="noopener">&#128187; VS Code holen</a>
+        <a class="res" href="https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer" target="_blank" rel="noopener">&#128268; Live Server</a>
+      </div>
+      <h3>Folien zum Nachlesen</h3>
+      <div class="res-grid">
+        <a class="res folie" href="folien/Modul1.pdf" target="_blank" rel="noopener">Modul 1</a><a class="res folie" href="folien/Modul2.pdf" target="_blank" rel="noopener">Modul 2</a><a class="res folie" href="folien/Modul3.pdf" target="_blank" rel="noopener">Modul 3</a><a class="res folie" href="folien/Modul4.pdf" target="_blank" rel="noopener">Modul 4</a><a class="res folie" href="folien/Modul5.pdf" target="_blank" rel="noopener">Modul 5</a><a class="res folie" href="folien/Modul6.pdf" target="_blank" rel="noopener">Modul 6</a><a class="res folie" href="folien/Modul7.pdf" target="_blank" rel="noopener">Modul 7</a><a class="res folie" href="folien/Modul8.pdf" target="_blank" rel="noopener">Modul 8</a>
+      </div>
+      <p class="hint">Klick unten ein Projekt an, um das fertige Spiel zu spielen. Über &#8222;Code anzeigen&#8220; siehst du die komplette Lösung.</p>
+    </div>
+
+    <div class="hinweis">
+      <b>&#128273; L&ouml;sungsseite:</b> Hier laufen die <b>fertigen Spiele</b> mit der kompletten L&ouml;sung &ndash;
+      klick ein Projekt an und spiel es. Diese Seite ist <b>nur f&uuml;r dich</b> (bzw. zum Vorf&uuml;hren am Kursende).
+      Im Kurs bauen die Kinder die Spiele selbst aus den Vorlagen.
+    </div>
+
+    <h2>Modul 1 · Die Bausteine</h2>
+    <div class="grid">
+      <a class="card" href="1a-ueber-mich/">
+        <div class="emoji">👋</div>
+        <div class="name">Über-mich-Seite</div>
+        <div class="desc">Deine erste eigene Seite mit Variablen.</div>
+      </a>
+      <a class="card" href="1b-zahlen-zaubertrick/">
+        <div class="emoji">🔮</div>
+        <div class="name">Zahlen-Zaubertrick</div>
+        <div class="desc">Der Computer errät immer das Ergebnis.</div>
+      </a>
+      <a class="card" href="1c-alters-rechner/">
+        <div class="emoji">🎂</div>
+        <div class="name">Alters-Rechner</div>
+        <div class="desc">Geburtsjahr eingeben, Alter berechnen.</div>
+      </a>
+      <a class="card" href="1d-taschengeld/">
+        <div class="emoji">🐷</div>
+        <div class="name">Taschengeld-Rechner</div>
+        <div class="desc">Mit Zahlen rechnen und anzeigen.</div>
+      </a>
+    </div>
+    <h2>Modul 2 · Deine Seite wird lebendig</h2>
+    <div class="grid">
+      <a class="card" href="2a-tag-und-nacht/">
+        <div class="emoji">🌗</div>
+        <div class="name">Tag & Nacht</div>
+        <div class="desc">Zwischen hell und dunkel umschalten.</div>
+      </a>
+      <a class="card" href="2b-stimmungs-maschine/">
+        <div class="emoji">🙂</div>
+        <div class="name">Stimmungs-Maschine</div>
+        <div class="desc">Knöpfe ändern Gesicht und Farbe.</div>
+      </a>
+      <a class="card" href="2c-ampel/">
+        <div class="emoji">🚦</div>
+        <div class="name">Die Ampel</div>
+        <div class="desc">Knöpfe schalten das Licht.</div>
+      </a>
+    </div>
+    <h2>Modul 3 · Zufall und Entscheidungen</h2>
+    <div class="grid">
+      <a class="card" href="3a-wahrsager/">
+        <div class="emoji">🔮</div>
+        <div class="name">Wahrsager-Kugel</div>
+        <div class="desc">Zufällige Antworten auf jede Frage.</div>
+      </a>
+      <a class="card" href="3b-gluecksrad/">
+        <div class="emoji">⭐</div>
+        <div class="name">Glücksrad</div>
+        <div class="desc">Drei Gleiche sind der Jackpot.</div>
+      </a>
+      <a class="card" href="3c-hoeher-tiefer/">
+        <div class="emoji">🃏</div>
+        <div class="name">Höher oder Tiefer</div>
+        <div class="desc">Rate, ob die nächste Karte höher ist.</div>
+      </a>
+      <a class="card" href="3d-taschenrechner/">
+        <div class="emoji">🧮</div>
+        <div class="name">Taschenrechner</div>
+        <div class="desc">Zahlen tippen und rechnen.</div>
+      </a>
+      <a class="card" href="3e-schere-stein-papier/">
+        <div class="emoji">✊</div>
+        <div class="name">Schere, Stein, Papier</div>
+        <div class="desc">Spiel gegen den Computer.</div>
+      </a>
+    </div>
+    <h2>Modul 4 · Schleifen</h2>
+    <div class="grid">
+      <a class="card" href="4a-einmaleins/">
+        <div class="emoji">✖️</div>
+        <div class="name">Einmaleins-Maschine</div>
+        <div class="desc">Eine ganze Reihe per Schleife.</div>
+      </a>
+      <a class="card" href="4b-bestenliste/">
+        <div class="emoji">🏆</div>
+        <div class="name">Bestenliste</div>
+        <div class="desc">Alle Namen nummeriert auflisten.</div>
+      </a>
+      <a class="card" href="4c-zahlen-raetsel/">
+        <div class="emoji">🔢</div>
+        <div class="name">Zahlen-Rätsel</div>
+        <div class="desc">Rate die geheime Zahl.</div>
+      </a>
+      <a class="card" href="4d-monster-wellen/">
+        <div class="emoji">👻</div>
+        <div class="name">Monster-Wellen</div>
+        <div class="desc">Hau dich durch Welle für Welle.</div>
+      </a>
+    </div>
+    <h2>Modul 5 · Deine großen Spiele</h2>
+    <div class="grid">
+      <a class="card" href="5a-held-gegen-monster/">
+        <div class="emoji">🐉</div>
+        <div class="name">Held gegen Monster</div>
+        <div class="desc">Kampf mit Zufallsschaden.</div>
+      </a>
+      <a class="card" href="5b-klick-imperium/">
+        <div class="emoji">👑</div>
+        <div class="name">Klick-Imperium</div>
+        <div class="desc">Klicken, Upgrades kaufen, wachsen.</div>
+      </a>
+    </div>
+    <h2>Modul 6 · Timer</h2>
+    <div class="grid">
+      <a class="card" href="6a-reaktionsspiel/">
+        <div class="emoji">⚡</div>
+        <div class="name">Reaktionsspiel</div>
+        <div class="desc">Wie schnell bist du?</div>
+      </a>
+      <a class="card" href="6b-klick-jagd/">
+        <div class="emoji">⏱️</div>
+        <div class="name">Klick-Jagd</div>
+        <div class="desc">So viele Klicks wie möglich.</div>
+      </a>
+    </div>
+    <h2>Modul 7 · Tastatursteuerung</h2>
+    <div class="grid">
+      <a class="card" href="7a-fang-den-stern/">
+        <div class="emoji">🌟</div>
+        <div class="name">Fang den Stern</div>
+        <div class="desc">Bewege den Helden, sammle Sterne.</div>
+      </a>
+      <a class="card" href="7b-ausweich-spiel/">
+        <div class="emoji">🏃</div>
+        <div class="name">Ausweich-Spiel</div>
+        <div class="desc">Weich dem fallenden Hindernis aus.</div>
+      </a>
+    </div>
+    <h2>Modul 8 · Klassiker-Spiele</h2>
+    <div class="grid">
+      <a class="card" href="8a-galgenmaennchen/">
+        <div class="emoji">🔤</div>
+        <div class="name">Galgenmännchen</div>
+        <div class="desc">Rate das Wort Buchstabe für Buchstabe.</div>
+      </a>
+      <a class="card" href="8b-tic-tac-toe/">
+        <div class="emoji">❌</div>
+        <div class="name">Drei gewinnt</div>
+        <div class="desc">Tic-Tac-Toe für zwei Spieler.</div>
+      </a>
+      <a class="card" href="8c-memory/">
+        <div class="emoji">🧠</div>
+        <div class="name">Memory</div>
+        <div class="desc">Finde alle Paare.</div>
+      </a>
+    </div>
+  </div>
+  <footer>DigiCamp · Lösungsseite (nur für den Trainer)</footer>
+</body>
+</html>
